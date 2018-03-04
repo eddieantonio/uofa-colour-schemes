@@ -45,7 +45,7 @@ if not {UOFAGREEN, UOFAGOLD}.issubset(colors.values()):
     error("Colour schemes MUST have UofA's green and gold.")
 
 print('@charset "UTF-8";')
-print(':roof {')
+print(':root {')
 for name, color in colors.items():
     print(f'  --{name.lower()}: {color};')
 print('}')
