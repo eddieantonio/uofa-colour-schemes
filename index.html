@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Swatch test </title>
+    <style>
+:root {
+  /* Official colors. */
+  --uofagreen: #007c41;
+  --uofagold: #ffdb05;
+
+  /* Neutral */
+  --richblack: #040f0f;
+  --gunmetal: #2d3a3a;
+  --offwhite: #fcfffc;
+
+  /* Subdued */
+  --palejade: #00bfb2;
+  --slate: #028990;
+  --cream: #f0f3bd;
+
+  /* Vibrant */
+  --offwhite: #fcfcfc;
+  --palegreen: #d2f898;
+  --mustard: #f6f930;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'DIN Sans', Helvetica Neue, Arial, sans-serif;
+  color: var(--gunmetal);
+  background-color: var(--offwhite);
+
+  --color-1: var(--uofagreen);
+  --color-2: var(--uofagold);
+}
+h1, h2 { text-align: center; }
+
+.swatch {
+  display: flex;
+}
+.swatch .color {
+  flex: 1;
+    min-height: 100px;
+}
+
+.color-1 { background-color: var(--color-1); }
+.color-2 { background-color: var(--color-2); }
+
+.scheme-neutral .color-3 { background-color: var(--richblack); }
+.scheme-neutral .color-4 { background-color: var(--gunmetal); }
+.scheme-neutral .color-5 { background-color: var(--offwhite); }
+
+.scheme-vibrant .color-3 { background-color: var(--offwhite); }
+.scheme-vibrant .color-4 { background-color: var(--palegreen); }
+.scheme-vibrant .color-5 { background-color: var(--mustard); }
+
+.scheme-subdued .color-3 { background-color: var(--palejade); }
+.scheme-subdued .color-4 { background-color: var(--slate); }
+.scheme-subdued .color-5 { background-color: var(--cream); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1> Swatch test </h1>
+    </header>
+
+    <main>
+      <h2> Neutral </h2>
+      <section class="swatch scheme-neutral">
+        <div class="color color-1"></div>
+        <div class="color color-2"></div>
+        <div class="color color-3"></div>
+        <div class="color color-4"></div>
+        <div class="color color-5"></div>
+      </section>
+
+      <h2> Vibrant </h2>
+      <section class="swatch scheme-vibrant">
+        <div class="color color-1"></div>
+        <div class="color color-2"></div>
+        <div class="color color-3"></div>
+        <div class="color color-4"></div>
+        <div class="color color-5"></div>
+      </section>
+
+      <h2> Subdued </h2>
+      <section class="swatch scheme-subdued">
+        <div class="color color-1"></div>
+        <div class="color color-2"></div>
+        <div class="color color-3"></div>
+        <div class="color color-4"></div>
+        <div class="color color-5"></div>
+      </section>
+    </main>
+  </body>
+</html>
